@@ -12,8 +12,9 @@ class Card {
         std::string cardName;
         int life;
         std::vector<std::string> colors;
-        std::string type;
+        std::string cardType;
         int cost;
+        int power;
         std::string rarity;
         std::string variant;
         int counter;
@@ -29,24 +30,25 @@ class Card {
     //PUBLIC METHODS
     public:
     //Default constructor
-        auto Card::Cards();
-        auto Card::Cards(string cardNum, 
-                        string Name, 
-                        int L, 
-                        vector<string> Color, 
-                        string T, 
-                        int Cos, 
-                        string Rar, 
-                        string Var, 
-                        int Coun, 
-                        string Attr, 
-                        string Eff, 
-                        bool has TrigEff, 
-                        string TrigEff, 
-                        vector<string> KeyW, 
-                        int BlockIco, 
-                        string Art, 
-                        string CardImg);
+        Cards();
+        Cards(string cardNum, 
+            string Name, 
+            int L, 
+            vector<string> Color, 
+            string Type, 
+            int Cos, 
+		     Pow,    
+            string Rar, 
+            string Var, 
+            int Coun, 
+            string Attr, 
+            string Eff, 
+            bool hasTrigEff, 
+            string TrigEff, 
+            vector<string> KeyW, 
+            int BlockIco, 
+            string Art, 
+            string CardImg);
 
 
     //Getters
@@ -54,8 +56,9 @@ class Card {
         std::string getCardName() const { return cardName; }
         int getLife() const { return life; }
         std::vector<std::string> getColors() const { return colors; }
-        std::string getType() const { return type; }
+        std::string getType() const { return cardType; }
         int getCost() const { return cost; }
+        int getPower() const { return power; }
         std::string getRarity() const { return rarity; }
         std::string getVariant() const { return variant; }
 
@@ -63,7 +66,7 @@ class Card {
         int getCounter() const { return counter; }
         std::string getAttribute() const { return attribute; }
         std::string getEffect() const { return effect; }
-        bool hasTriggerEffect() const { return hasTriggerEffect; }
+        bool getTrigger() const { return hasTriggerEffect; }
         std::string getTriggerEffect() const { return triggerEffect; }
         std::vector<std::string> getKeywords() const { return keywords; }
         int getBlockIcon() const { return blockIcon; }
