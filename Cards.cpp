@@ -4,8 +4,7 @@
 #include <iostream>
 
 //Default constructor
-Card::Card()
-    : cardNumber(""), 
+Card::Card(): cardNumber(""), 
     cardName(""), 
     life(0), 
     colors({}), 

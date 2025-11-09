@@ -30,25 +30,25 @@ class Card {
     //PUBLIC METHODS
     public:
     //Default constructor
-        Cards();
-        Cards(string cardNum, 
-            string Name, 
+        Card();
+        Card(std::string cardNum, 
+            std::string Name, 
             int L, 
-            vector<string> Color, 
-            string Type, 
+            std::vector<std::string> Color, 
+            std::string Type, 
             int Cos, 
-		     Pow,    
-            string Rar, 
-            string Var, 
+		    int Pow,    
+            std::string Rar, 
+            std::string Var,
             int Coun, 
-            string Attr, 
-            string Eff, 
+            std::string Attr,
+            std::string Eff,
             bool hasTrigEff, 
-            string TrigEff, 
-            vector<string> KeyW, 
+            std::string TrigEff,
+            std::vector<std::string> KeyW,
             int BlockIco, 
-            string Art, 
-            string CardImg);
+            std::string Art,
+            std::string CardImg);
 
 
     //Getters
